@@ -145,9 +145,11 @@
     console.log(age);
 
     //5. একটা ফাংশন লিখ, যেখানে একটা ভেরিয়েবল স্ট্রিং হিসেবে দিবি, আর সেটার দৈর্ঘ্য রিটার্ন করবে।
-     function isString(){
-
+     function isString(name){
+        const stringLength = name.length;
+        return stringLength;
      }
+     console.log(isString('masud rana'));
 
 
     //6. তুই একটা ফাংশন লিখ, যা তিনটা সংখ্যার গড় বের করে রিটার্ন করবে।
@@ -157,6 +159,27 @@
         return average;
     }
     console.log(isGor(10, 20, 30));
+
+    //My name is Masud Rana. I am 40 years old. I am a web developer.
+
+    function myParagraph( name, year, profession){
+        const myDescrition = 'My name is ' + name + '. I am '  + year + ' years old. I am a ' + profession;
+        return myDescrition;
+    }
+    console.log(myParagraph('Faroque', 40, 'web developer'));
+    console.log(myParagraph('Masud', 37, 'Engineer'));
+
+    // My name is Masud Rana. I work for WND. I am maried. We are 4 members in our family.
+
+    function myAddress(name, job, maritalStatus, familyMember){
+        const detailAdd = 'My name is ' + name + '. I work for ' + job + '. I am ' + maritalStatus + '. We are ' + familyMember + ' members in our family.';
+        return detailAdd;
+    }
+    console.log(myAddress('Masud Rana', 'WND', 'maried', 4 ));
+
+
+
+
 
 
  </script>
