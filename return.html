@@ -98,8 +98,67 @@
  <!-- Practice: -->
 
  <script>
-    //1.
+    //1. একটা ফাংশন লিখ, যাতে কোনো কন্ডিশনের ভিত্তিতে নাম্বার 10-এর বেশি হলে true রিটার্ন করবে, আর না হলে false রিটার্ন করবে।
+
+    function greaterThan10(num){
+        if(num >10){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    console.log(greaterThan10(15));
+
+    //2.তুই একটা ফাংশন লিখ, যা সংখ্যা নিবে আর তারপর সেই সংখ্যা যদি 13 দিয়ে সমানভাবে ভাগ যায়, তাহলে  true রিটার্ন দিবে, না হয় false রিটার্ন দিবে।
     
+    function equalDivide(number){
+        if(number % 13 == 0){
+            return true;
+        }else{
+            return false;   
+        }
+    }
+    console.log(equalDivide(53));
+
+    //3. তুই একটা রেস্টুরেন্টে গিয়েছিস, সেখানে ভাত (rice),তরকারি (curry)আর ড্রিংকস (drinks)খাবি। একটা ফাংশন লিখ,যাতে খাবারের মোট দাম যোগ করে মোট বিল রিটার্ন করবে।
+    
+    const rice= 50;
+    const curry= 120;
+    const drinks= 30;
+
+    function foodBill(num1, num2, num3){
+        const totalBill = num1+num2+num3;
+        return totalBill;
+    }
+    console.log('Total Bill:',foodBill(rice, curry, drinks));
+
+    //4. এমন একটা ফাংশন বানা, যেখানে বয়স দিলে সেটি 18-এর বেশি হলে ‘Eligible for Voting’ রিটার্ন করবে, আর না হলে 'Not Eligible'।
+
+    function greaterThan18(num){
+        if(num>18){
+            return 'Eligible for Voting';
+        }else{
+            return "Not Eligible";
+        }
+    }
+    const age = greaterThan18(17);
+    console.log(age);
+
+    //5. একটা ফাংশন লিখ, যেখানে একটা ভেরিয়েবল স্ট্রিং হিসেবে দিবি, আর সেটার দৈর্ঘ্য রিটার্ন করবে।
+     function isString(){
+
+     }
+
+
+    //6. তুই একটা ফাংশন লিখ, যা তিনটা সংখ্যার গড় বের করে রিটার্ন করবে।
+
+    function isGor(n1, n2, n3){
+        const average = (n1+n2+n3)/3;
+        return average;
+    }
+    console.log(isGor(10, 20, 30));
+
+
  </script>
 
     
