@@ -14,12 +14,50 @@
 
         // স্টেপ-1: প্রথমে দেখব যে, আমাদের ফাংশনটা ঠিকঠাকমতো কাজ করছে কি না। অর্থাৎ সেটাকে একবার প্রিন্ট করে দেখব যে, এখানে আমাদের ফাংশনটা কাজ করছে কি না।
 
-        function evenSizedString(str){
+        function evenSizedStrings(str){
             console.log(str);
+        }
+        evenSizedStrings('Dhaka');
+
+        // স্টেপ-2: আমরা জানি, কীভাবে কোনো string এর length বের করতে হয়। সেটাই ফাংশনের ভিতরে size নামে ভেরিয়েবলে রাখলাম। তুই চাইলে length বা অন্য কোনো মিনিংফুল নাম দিতে পারস। মিনিংফুল নাম বলতে বোঝায়, যে নাম দিয়ে বোঝা যাবে বা ধারণা করা যাবে, এই ভেরিয়েবলের মধ্যে কী রাখা আছে বা এইটার কাজ কী।
+
+        function evenSizedString(strs){
+            const size = strs.length;
+            console.log(strs, size);
         }
         evenSizedString('Dhaka');
 
-        // স্টেপ-2:
+        // স্টেপ-3: এখন দেখব, যে length আমরা বের করেছি, সেটা জোড়সংখ্যা কি না।
+
+        function evenSizedStringTs(strng){
+            const size = strng.length;
+            if(size % 2 === 0){
+                console.log('Even Size');
+            }else{
+                console.log('Odd Size');
+            }
+        }
+        evenSizedStringTs('Dhaka');
+
+    </script>
+
+    <script>
+        //Practice
+
+        //1. তোর দেওয়া Array-এর মধ্যে যতগুলো উপাদান আছে, উপাদানের সংখ্যা জোড় নাকি বিজোড়, তা চেক কর। ফাংশন লিখে এটা করে দেখ।
+
+        function arrayEvenOdd(numbs){
+            if(numbs.length % 2 === 0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        const finalResult = arrayEvenOdd([12, 15, 18, 22, 121, 8]);
+        console.log(finalResult);
+
+        //2. 
+        
 
     </script>
     
