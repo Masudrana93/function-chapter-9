@@ -160,6 +160,19 @@
     }
     console.log(isGor(10, 20, 30));
 
+    //7. একটা ফাংশন লিখ, যেটা চেক করবে, কোনো একটা সংখ্যা নেগেটিভ কি না। যদি নেগেটিভ (Negetive) নাম্বার হয়, তাহলে সেটাকে -1 দিয়ে গুণ করে রেজাল্ট রিটার্ন করবে।
+
+    function multiplyMinusOne (num){
+        if(num < 0){
+            return  num * -1;
+           
+        }else{
+            return num;
+        }
+    }
+    const results = multiplyMinusOne(-10);
+    console.log(results);
+
     //My name is Masud Rana. I am 40 years old. I am a web developer.
 
     function myParagraph( name, year, profession){
@@ -176,11 +189,6 @@
         return detailAdd;
     }
     console.log(myAddress('Masud Rana', 'WND', 'maried', 4 ));
-
-
-
-
-
 
  </script>
 
