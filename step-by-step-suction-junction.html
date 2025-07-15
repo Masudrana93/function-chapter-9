@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step by step function's junction</title>
+</head>
+<body>
+
+    <h2>Topic: Step by step function's junction</h2>
+
+    <script>
+
+        // step-1: function কল করা
+
+        function sumOfNumberS(){
+
+        }
+        const result = sumOfNumberS();
+        console.log(result);
+
+        // step-2: প্যারামিটার হিসেবে একটা arrray পাঠাব
+
+        function sumOfNumbeRs(numbers){
+            console.log(numbers);
+        }
+        const results = sumOfNumbeRs([12, 45, 6, 8, 14]);
+        console.log(results);
+
+        // step-3: যদি ফাংশনের ভিতরে Array-টাকে পাওয়া যায়, তাহলে ফাংশনের ভিতরে লুপ করে দেখব, ‍array-এর প্রতিটা আলাদা আলাদাভাবে আউটপুট হিসেবে পাচ্ছি কি না।
+
+        
+        function sumOfNumbers(numbers){
+            for(const number of numbers){
+                console.log(number);
+            }
+        
+        }
+        const reulT = sumOfNumbers([14, 45, 6, 8, 14]);
+        console.log(reulT);
+
+        // step-4: 
+
+        function sumOfNumBers(numbers){
+            let sum = 0;
+            for(const number of numbers){
+                sum = sum + number;
+                console.log(sum);
+            }
+        }
+        const nums = [54, 62, 12, 6];
+        const sum = sumOfNumBers(nums);
+
+        // step-5: 
+
+    </script>
+    
+</body>
+</html>
